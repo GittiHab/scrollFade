@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Scroll Fade Example</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            font-family: arial;
+            text-align: center;
+        }
+        p {
+            margin: 600px 0;
+        }
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="scrollFade.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#first').scrollFadeOut(500);
+            $('#second').scrollFadeIn(500, 500);
+        });
+    </script>
+</head>
+
+<body>
+    <p id="first">This is an example</p>
+    
+    <p id="second">This is another example</p>
+</body>
+
+</html>
